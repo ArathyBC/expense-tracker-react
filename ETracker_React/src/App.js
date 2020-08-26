@@ -4,10 +4,9 @@ import {Router, Route, browserHistory, Redirect} from "react-router";
 import './App.css';
 import Login from './components/Login';
 import Home from './components/Home';
-import Datepicker from './components/DatePicker';
-// import * as API from '../Api';
-// import LineChartmn from './components/LineChartmn';
-// import './components/Style.css';
+import * as API from '../Api';
+import LineChartmn from './components/LineChartmn';
+import './components/Style.css';
 
 class App extends Component{
   render(){
@@ -20,13 +19,9 @@ class App extends Component{
         <Route exact path={"/Home/:id/:name"} component={Home} />
         </Route>
         
-         {/* <Route>
-      //   <Route exact path={"/"} component={Home} />
-      //   </Route> */}
+         
        </Router>
-      // <div>
-      //   <Datepicker />
-      // </div>
+      
     );
   }
 }
@@ -35,14 +30,3 @@ class App extends Component{
 
 export default App;
 
-// function App(){
-
-
-
-//   return(
-//     <div>
-//       <Datepicker />
-//     </div>
-//   )
-// }
-// export default App
